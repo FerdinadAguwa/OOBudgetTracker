@@ -20,6 +20,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/BudgetTracker",
   useCreateIndex: true,
   useFindAndModify: false
 });
+// mongodb+srv://dbUser:DaddyDad2010@cluster0.8gp9l.mongodb.net/BudgetTracker?retryWrites=true&w=majority
+// mongodb+srv://dbUser:<password>@cluster0.8gp9l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
 
 // routes
 app.use(require("./routes/api.js"));
